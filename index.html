@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	
+
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>Meu Segundo JavaScript</title>
@@ -8,7 +8,7 @@
 		<script type="text/javascript" src="js/javascript.js"></script>
 	</head>
 	
-	<body onload="calendario();">
+	<body onload="calendar();">
 	
 		<div id="container">
 			<div id="header">
@@ -18,6 +18,7 @@
 			<div id="calendar">	
 				<h2>Meu Segundo JavaScript</h2> 		
 				
+				<!-- EXIBINDO CALENDÁRIO -->
 				<table>
 					<tr>
 						<td class="weekend">DOM</td>
@@ -88,25 +89,25 @@
 				<table class="variant">	
 					<tr>
 						<td>
-							<img id="voltar" class="img" onclick="alteraMes(0);" src="img/volta.png" />
-							<img class="img" src="img/mes.png" />
-							<img id="avancar" class="img"  onclick="alteraMes(1);" src="img/avanca.png" />
+							<img id="return" onclick="changeMonth(0);" src="img/volta.png" />
+							<img src="img/mes.png" />
+							<img id="advance" onclick="changeMonth(1);" src="img/avanca.png" />
 						</td>
 						
 						<td>
-							<img id="mesA" src="img/n.png" />
-							<img id="mesB" src="img/n.png" />
+							<img id="month1" src="img/n.png" />
+							<img id="month2" src="img/n.png" />
 							<img src="img/b.png" />
-							<img id="anoA" src="img/n.png" />
-							<img id="anoB" src="img/n.png" />
-							<img id="anoC" src="img/n.png" />
-							<img id="anoD" src="img/n.png" />
+							<img id="year1" src="img/n.png" />
+							<img id="year2" src="img/n.png" />
+							<img id="year3" src="img/n.png" />
+							<img id="year4" src="img/n.png" />
 						</td>
 						
 						<td>
-							<img id="voltar" class="img"  onclick="alteraAno(0);" src="img/volta.png" />
-							<img class="img" src="img/ano.png" />
-							<img id="avancar" class="img" onclick="alteraAno(1);" src="img/avanca.png" />
+							<img id="return" onclick="changeYear(0);" src="img/volta.png" />
+							<img src="img/ano.png" />
+							<img id="advance" onclick="changeYear(1);" src="img/avanca.png" />
 						</td>
 					</tr>
 					
@@ -115,9 +116,9 @@
 							<form>
 								<label>Digite mês e ano: </label>
 								<input type="text" id="month" maxlength="2" />
-								<img src="img/b.png" class="img2"/>
+								<img src="img/b.png" />
 								<input type="text" id="year" maxlength="4" /> 
-								<img src="img/ok.gif" class="ok" onclick="GoDate();" />
+								<img src="img/ok.gif" class="ok" onclick="goDate();" />
 							</form>
 						</td>
 					</tr>
@@ -126,7 +127,7 @@
 			
 			<p>
 				Clique nas setas para avançar mês ou ano<br />
-				ou digite Mês e Ano e clique OK!!!<br />
+				Ou digite Mês e Ano e clique OK!!!<br />
 				Clique nos dias para adicionar tarefas!!!
 			</p>
 			

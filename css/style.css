@@ -8,12 +8,9 @@ div  {
 	margin-bottom: 5px;
 }
 
-h1, h2 {
-	text-align: center;
-}
-
 h1 {
 	font-size: 2.5em;
+	text-align: center;	
 }
 
 h2 {
@@ -24,25 +21,14 @@ h2 {
 
 img {
 	border: none; 
-	width: 25px;
-	height: 35px;
-}
-
-.img{
-	width: 60px;
-	height: 60px;
-}
-
-.img2{
-	width: 35px;
-	height: 45px;
-	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;	
 }
 
 .ok{
 	width: 130px;
 	height: 60px;
-	vertical-align: middle;
 }
 
 table {
@@ -55,19 +41,18 @@ table {
 	border: 3px solid #000000;
 	border-radius: 10px;
 	padding:5px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 .variant {
 	height: 100px;
 	margin-top: 10px;
-	border: 3px solid #000000;
 }
 
 table .week {
 	background-color: #F5F5DC;
 	color: #000000;
-	font-weight: bold;
-	font-size: 20px;
 	height: 50px;
 	border-radius: 10px;
 	padding:5px;
@@ -76,8 +61,6 @@ table .week {
 table .weekend {
 	background-color: #FF0000;
 	color: #FFFFFF;
-	font-weight: bold;
-	font-size: 20px;
 	border: none;
 	height: 50px;	
 	border-radius: 10px;
@@ -85,10 +68,10 @@ table .weekend {
 }
 
 table label, input {
-	background-color: #8B6914;
+	background-color: #CD853F;
 	color: #FFFFFF;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 18px;
 	height: 50px;	
 	border-radius: 6px;
 	padding:5px;
@@ -105,6 +88,7 @@ table input {
 	color: #000000;
 	height: 25px;	
 	padding:5px;
+	font-size: 21px;	
 }
 
 #container {
